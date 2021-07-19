@@ -8,10 +8,10 @@
 }
 
 .box:nth-child(even) {
-    background-color:salmon;
+    background-color:rgb(226, 61, 19);
 }
 
 .box:nth-child(odd) {
-    background-color:rgb(235, 214, 148)
+    background-color:rgb(97, 99, 102);
 }
 

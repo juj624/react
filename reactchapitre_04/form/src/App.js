@@ -20,7 +20,12 @@ class App extends React.Component {
   }
   onEmailChange(e) {
     this.setState({ email: e.target.value })
-
+    const email_validator_regex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+    if(email_validator_regex(e.target.value)){
+      this.setState({isValidEmail:true})
+    }else{
+      this.setState({isValidEmail:false})
+    }
   }
 
   onPasswordChange(e) {
@@ -39,7 +44,7 @@ class App extends React.Component {
         <div className="form-group row d-flex p-2 bd-highlight d-flex justify-content-center">
           <div className="col-sm-12">
             <label for="inputEmail" className="col-sm-12 col-form-label">Email</label>
-            <input type="text" className="form-control" id="inputEmail" placeholder="julienpenot@outook.com" value={this.state.email} onChange={this.onEmailChange} />
+            <input type="text" className={this.state.isValidEmail ? "is-valid form-control": "is-invalid form-control"} id="inputEmail" placeholder="julienpenot@outook.com" value={this.state.email} onChange={this.onEmailChange} />
           </div>
         </div>
         <div className="form-group row d-flex p-2 bd-highlight d-flex justify-content-center">

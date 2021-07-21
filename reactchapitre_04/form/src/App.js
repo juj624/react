@@ -51,6 +51,8 @@ class App extends React.Component {
           <div className="col-sm-12">
             <label for="inputPassword" className="col-sm-12 col-form-label">Password</label>
             <input type="password" className={this.state.isValidPassword ? "is-valid form-control" : "is-invalid form-control"} id="inputPassword" placeholder="Password" value={this.state.password} onChange={this.onPasswordChange} />
+            <input type="checkbox" name="conditions" value="ok" /> 
+            Remember me !
           </div>
         </div>
         <button className="btn btn-primary" type="submit">Submit form</button>

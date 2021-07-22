@@ -1,9 +1,5 @@
 import React from "react";
 
-// const myCSS = {
-//   fontSize: 100,
-//   color: "black",
-// }
 
 class Box extends React.Component {
   
@@ -11,9 +7,9 @@ class Box extends React.Component {
     const vlc = () =>{
      if(this.props.icon !== "local_drink"){
         return <input type="range" 
-        min={this.props.min} max={this.props.max} value =    {this.props.value} onChange={this.props.onChange}>
+        min={this.props.min} max={this.props.max} value = {this.props.value} onChange={this.props.onChange}>
          </input>
-    }
+     }
     }
     return (
       <div className="box col-sm-3 col-6 ">

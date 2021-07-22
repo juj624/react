@@ -35,8 +35,7 @@ class Add extends React.Component {
       <div className="container-fluid">
           <form className="d-flex">
             <input onChange ={this.updateProductName} className="form-control me-2" type="search" placeholder="item" aria-label="Search" />
-            <button className="btn btn-outline-success" type="submit">Add</button>
-            <input type="text" name="name" required
+            <input type="button" name="name" required
        min="1" max="10" onChange={this.updatePrice}></input>
        <button>Add</button>
           </form>

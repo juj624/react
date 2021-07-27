@@ -7,13 +7,11 @@ class Button extends React.Component {
         return(
             <div>
                 <button onClick={this.props.country}>{this.props.children}</button>
-
             </div>
 
         )
     }
 }
-
 
 
 

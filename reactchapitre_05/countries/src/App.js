@@ -1,8 +1,8 @@
 import React from "react"
 import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css'
 import Button from "./Button";
 import Card from "./Card";
+
 
 class App extends React.Component {
   constructor() {
@@ -27,9 +27,11 @@ class App extends React.Component {
         //     flag:data[0].flag,
 				// 	});
         // });
+
         fetch("http://localhost:8000/France")
         .then((res) => res.json())
         .then((data) =>{
+
           this.setState({
             name:data.data[0].name,
             capital:data.data[0].capital,
@@ -57,11 +59,13 @@ class App extends React.Component {
     render(){
       
       return ( 
-        <div>
+        <div >
+          <div className="button">
           <Button country={() => this.getCountry("france")}>France</Button>
           <Button country={() => this.getCountry("brazil")}>Brazil</Button>
           <Button country={() => this.getCountry("croatia")}>Croatia</Button>
-          <Card name={this.state.name} capital={this.state.capital} region={this.state.region} population={this.state.population} flag={this.state.flag} alt="flag" />
+          </div>
+          <Card name={this.state.name} capital={this.state.capital} region={this.state.region} population={this.state.population} flag={this.state.flag} alt="flag"/>
         </div>
       );
   }

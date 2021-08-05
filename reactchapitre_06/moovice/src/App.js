@@ -6,6 +6,7 @@ import  Weeklybattle from './view/Weekly-battle'
 import  Popular from './view/Popular'
 import  popularbattle from './view/Popular-battle'
 import  Favorites from './view/Favorites'
+import "bootstrap/dist/css/bootstrap.min.css";
 import './App.css';
 
 

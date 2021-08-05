@@ -1,0 +1,32 @@
+
+.block-movie {
+  display: flex;
+  align-items: center;
+  flex-direction:column ;
+  background-color: white;
+  color: rgb(0, 0, 0);
+  color: white;
+  background-color: black;
+
+}
+.ggy{
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 40%;
+}
+
+img {
+    margin: 15px;
+    box-shadow: 13px 12px 17px 0px #FF9527
+    /* border-radius: 10% / 50%; */
+}
+
+ul{
+    text-align: justify;
+    width: 50%;
+    list-style-type: none;
+}
+
+.title-movie {
+    margin-left: 75px;
+}

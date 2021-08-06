@@ -38,9 +38,6 @@ class Home extends React.Component {
                     <li class="nav-item">
                         <Link className="nav-link" to="/Favorites">Favorites</Link>
                     </li>
-                    <li class="nav-item">
-                        <Link className="nav-link" to="/Cards">Cards</Link>
-                    </li>
                         </ul>
             </div>
         </div>

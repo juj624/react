@@ -7,7 +7,7 @@ class Cards extends React.Component {
 
     render() {
         return (
-            <div className="card" style={{width: "18rem"}}>
+            <div className="card" style={{width: "18rem"}} onClick={this.props.onclick}>
                 <img src={"https://image.tmdb.org/t/p/w300" +this.props.poster_path} alt="" className="card-img-top"/>
                 <div className="card-body">
                     <h5 className="card-title">{this.props.title}</h5>

@@ -15,9 +15,16 @@ class Popularbattle extends React.Component {
 
             currentBattle: 0,
             movies: [],
+            favorite: localStorage.getItem("favorite") || [],
+            
+
 
         }
 
+    }
+
+    favoriteMode() {
+        localStorage.setItem("favorite",[]);
     }
 
     componentDidMount() {
@@ -37,16 +44,20 @@ class Popularbattle extends React.Component {
     }
 
     render() {
-        // console.log(this.state)
+         console.log(this.state.movies)
         return (
             <div>
                 <h1>Popular-battle</h1>
-                {this.state.movies.slice(this.state.currentBattle, + 2).map((movie) => {
+                {this.state.movies.slice(this.state.currentBattle, (this.state.currentBattle + 2)).map((movie) => {
                     const movieLink = "https://image.tmdb.org/t/p/w300/"
 
+                    if(this.state.currentBattle === this.state.movies){
+                        alert("Vous avez parcouru tous les films !")
+                         
+                    }
                     return (
                         <Cards
-                            onclick={this.handleClick}
+                            onclick={ ()=> this.handleClick(movie.id)}
                             poster_path={movieLink + movie.poster_path}
                             title={movie.title}
                             release_date={movie.release_date}

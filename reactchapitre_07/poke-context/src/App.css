@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     list-style-type: none;
-    margin: 10px
+    
 }
 
 .navbar li {
@@ -23,6 +23,17 @@
     flex-direction: column;
 }
 
-.navbar:hover {
-    color: coral;
+
+.crt p{
+    display: flex;
+    justify-content: center;
+    margin:10px;
+    border: 1px solid black;
+    width: 15%;
+    margin-left: 45%;
+}
+
+.click-me {
+    display: flex;
+    justify-content: center;
 }

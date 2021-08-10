@@ -40,13 +40,13 @@ function Home() {
     return (
       <div>
           <h1>Home</h1>
-
-          <p>Name:{pokemon.name}</p>
-          <p>Height:{pokemon.height}</p> 
-          <p>Weight:{pokemon.weight}</p>
-          <p>Type:{pokemon.types[0].type.name}</p>
-
-          <button onClick={handleClick}>clik me ;)</button>
+            <div className="crt">
+            <p>Name:{pokemon.name}</p>
+            <p>Height:{pokemon.height}</p> 
+            <p>Weight:{pokemon.weight}</p>
+            <p>Type:{pokemon.types[0].type.name}</p>
+          </div>
+            <button className="click-me" onClick={handleClick}>clik me ;)</button>
       </div> 
     );
 }

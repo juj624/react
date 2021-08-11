@@ -24,16 +24,11 @@
 }
 
 
-.crt p{
+.crt p { 
     display: flex;
     justify-content: center;
     margin:10px;
     border: 1px solid black;
     width: 15%;
     margin-left: 45%;
-}
-
-.click-me {
-    display: flex;
-    justify-content: center;
 }

@@ -49,7 +49,7 @@ function Home() {
           </div>
             <button className="click-me" onClick={handleClick}>clik me ;)</button>
       </div> 
-    );
+);
 }
 
 

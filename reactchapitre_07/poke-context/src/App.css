@@ -12,10 +12,13 @@
 .form {
     display: flex;
     justify-content: center;
-    border: 1px solid black;
+    border: 2px solid black;
     width: 50%;
     padding: 50px;
     margin-left: 24%;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: rgba(0, 0, 0, 0.747);
 }
 
 .form-input {
@@ -31,4 +34,20 @@
     border: 1px solid black;
     width: 15%;
     margin-left: 45%;
+}
+
+input {
+    margin: 5px;
+    height: 22px;
+    width: 15rem;
+    border-radius: 5px;
+}
+
+.button {
+    border-radius: 5px;
+    background-color: rgba(255, 0, 0, 0.884);
+    width: 10rem;
+    margin-left: 50px;
+    font-size: 13px;
+    cursor: pointer;
 }

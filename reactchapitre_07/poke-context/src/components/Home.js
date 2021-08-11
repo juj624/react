@@ -1,4 +1,5 @@
-import {useState, useEffect} from "react";
+import {useState, useEffect, useContext} from "react";
+import {UserContext } from '../App';
 
 
 
@@ -7,6 +8,8 @@ function Home() {
 
 
     const [pokemon, setPokemon] = useState();
+    const checkContext = useContext(UserContext)
+    
 
 
   useEffect(() => {
@@ -41,12 +44,14 @@ function Home() {
     return (
       <div>
           <h1>Home</h1>
+          {! checkContext.isLogged ? <p>is not logged</p> : 
             <div className="crt">
-            <p>Name:{pokemon.name}</p>
-            <p>Height:{pokemon.height}</p> 
-            <p>Weight:{pokemon.weight}</p>
-            <p>Type:{pokemon.types[0].type.name}</p>
-          </div>
+            <p>Name :{pokemon.name}</p>
+            <p>Height :{pokemon.height}</p> 
+            <p>Weight :{pokemon.weight}</p>
+            <p>Type :{pokemon.types[0].type.name}</p>
+          </div>}
+
             <button className="click-me" onClick={handleClick}>clik me ;)</button>
       </div> 
 );

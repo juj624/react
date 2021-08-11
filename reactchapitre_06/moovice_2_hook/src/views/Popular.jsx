@@ -1,13 +1,10 @@
 import React, { Component } from 'react';
 import Card from '../components/Card'
 
-class Popular extends Component {
-
-    state = {
-        movies: []
-    }
-
-    componentDidMount() {
+function Popular (){
+    const [movies, setMovies] = useState();
+}
+    useEffect(() => {
         const url = "https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=e441f8a3a151d588a4932d2c5d310769"
 
         fetch(url)
@@ -15,33 +12,32 @@ class Popular extends Component {
             .then(data => {
                 console.log("data in popular component did mount", data);
 
-                this.setState({
+                useState({
                     movies: data.results
                 })
             })
     }
 
-    render() {
         return (
             <div className="container">
                 <h1 className="text-center">Popular</h1>
 
                 <div className="row">
-                    {
-                        this.state.movies.map(elem => {
+                    
+                        movies.map(elem => {
                             return (
                                 <div className="col-6">
                                     <Card {...elem} />
                                 </div>
                             )
                         })
-                    }
+                    
                 </div>
 
 
             </div>
         );
-    }
-}
+    
 
+    
 export default Popular;

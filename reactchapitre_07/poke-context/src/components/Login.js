@@ -10,9 +10,8 @@ function Login() {
     const logContext = useContext(UserContext)
     const [username, setUsername] = useState()
     const { register, handleSubmit, formState: { errors },} = useForm()
-    const onSubmit = data => console.log(data)
-
-    const onClick = () => logContext.setAuth()
+    const onSubmit = () =>  logContext.setAuth()
+    
 
     return (
         <div className="form">

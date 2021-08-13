@@ -24,7 +24,7 @@ function Login() {
                     {errors.password && <span>Max length exceeded !</span>}
 
 
-                    {!logContext.isLogged ? <input className="button" type="submit" value="se connecter" /> : <input className="button" type="submit" value="se déconnecter" /> }
+                    {!logContext.isLogged ? <input className="button" type="submit" value="se connecter" /> : <input className="btn" type="submit" value="se déconnecter" /> }
                 </div>
             </form>
         </div>

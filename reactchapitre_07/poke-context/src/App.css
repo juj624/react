@@ -2,10 +2,9 @@
     display: flex;
     justify-content: center;
     list-style-type: none;
-    background-color: rgba(0, 0, 0, 0.815);
+    background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+    background-blend-mode: multiply;
 }
-
-
 
 .navbar li {
     margin: 10px;
@@ -23,8 +22,8 @@ a {
     padding: 50px;
     margin-left: 24%;
     border-radius: 30px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    background-color: rgba(0, 0, 0, 0.747);
+    background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+    background-blend-mode: multiply;
 }
 
 .form-input {
@@ -37,7 +36,6 @@ a {
     display: flex;
     justify-content: center;
     margin: 20px;
-    /* border: 1px solid black; */
     width: 15%;
     margin-left: 42%;
     flex-direction: row;
@@ -54,6 +52,10 @@ p {
     margin: 5px;
     padding: 20px;
     flex-wrap: wrap;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.664);
+    color: cornsilk;
+    box-shadow: 10px 10px 10px rgba(40, 179, 35, 0.637);
 }
 
 input {
@@ -63,11 +65,10 @@ input {
     border-radius: 5px;
 }
 
-.button {
+.btn {
     border-radius: 5px;
     background-color: rgba(255, 0, 0, 0.884);
     width: 10rem;
     margin-left: 50px;
     font-size: 13px;
-    cursor: pointer;
 }
